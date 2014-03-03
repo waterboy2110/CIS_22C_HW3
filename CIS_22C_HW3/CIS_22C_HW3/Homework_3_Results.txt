@@ -1,0 +1,258 @@
+Implemeted:
+DISPLAY_NUMBER_LINES
+PRINT_FORWARD
+PRINT_BACK
+INSERT_LINE
+LIST_LINES
+DELETE_LINES
+SAVE_FILE
+HELP_CHOICE
+ABOUT_CHOICE
+QUIT_CHOICE
+
+Linked list is a double linked list.
+Linked list has a sentinel.
+saveToFile not in Main which I think it should be.
+
+TODO: 	* Linked list is not circular - crashes when trying to implement.
+	* Delete node crashes when deleteing the first node. Need to test for first node before deleting.
+	
+	* Could not implement the parser to tokenize the user input. I spent so much time trying to
+	  make this work that I was not focused on working with the double link structure which was
+	  the goal of this program. I have a pretty good idea on how to make it work. Hand Strtok an
+	  int based on who called it and chomp the string just far enough so that the data to save is in
+	  the last node of the vector.
+
+Print Forward:
+>f
+1: Popular Sorting Algorithms
+2:
+3: Insertion Sort
+4: Selection Sort
+5: Bubble Sort
+6:
+7: Shell Sort
+8: Comb Sort
+9: Merge Sort
+10: Heap Sort
+11: Quick Sort
+12:
+13: Counting Sort
+14: Bucket Sort
+15: Radix Sort
+16:
+17: Odd-even Sort
+18: Flash Sort
+19: Burst Sort
+20: Postman Sort
+21: Stooge Sort
+22: Sample Sort
+23:
+24: While there is a large number of sorting algorithms,
+25: in practical implementations a few algorithms predominate.
+26:
+27: Insertion sort is widely used for small data sets,
+28: while for large data sets an efficient sorting algorithm
+29: is used, such as heap sort, merge sort, or quicksort.
+>
+
+Print Backwards:
+>b
+29: is used, such as heap sort, merge sort, or quicksort.
+28: while for large data sets an efficient sorting algorithm
+27: Insertion sort is widely used for small data sets,
+26:
+25: in practical implementations a few algorithms predominate.
+24: While there is a large number of sorting algorithms,
+23:
+22: Sample Sort
+21: Stooge Sort
+20: Postman Sort
+19: Burst Sort
+18: Flash Sort
+17: Odd-even Sort
+16:
+15: Radix Sort
+14: Bucket Sort
+13: Counting Sort
+12:
+11: Quick Sort
+10: Heap Sort
+9: Merge Sort
+8: Comb Sort
+7: Shell Sort
+6:
+5: Bubble Sort
+4: Selection Sort
+3: Insertion Sort
+2:
+1: Popular Sorting Algorithms
+>
+
+List lines
+>l
+Line from:
+>12
+Line to:
+>3
+12:
+11: Quick Sort
+10: Heap Sort
+9: Merge Sort
+8: Comb Sort
+7: Shell Sort
+6:
+5: Bubble Sort
+4: Selection Sort
+3: Insertion Sort
+>l
+Line from:
+>2
+Line to:
+>22
+2:
+3: Insertion Sort
+4: Selection Sort
+5: Bubble Sort
+6:
+7: Shell Sort
+8: Comb Sort
+9: Merge Sort
+10: Heap Sort
+11: Quick Sort
+12:
+13: Counting Sort
+14: Bucket Sort
+15: Radix Sort
+16:
+17: Odd-even Sort
+18: Flash Sort
+19: Burst Sort
+20: Postman Sort
+21: Stooge Sort
+22: Sample Sort
+>
+
+About:
+>a
+
+Author: James Agua 20122405
+Date: Feb 02, 2014
+CIS27C HW3-Linked Lists
+Winter Deanza
+>
+
+Help:
+>h
+
+Help Menu
+T       Display the number of lines
+F       Print the list forward
+B       Print the list backward
+I       Insert <line number> <text>
+L       List lines <line number> < line number>
+D       Delete lines <line number> <line number>
+S       Save list to file <filename>
+H       This menu
+A       About the author
+Q       End the program
+
+>
+
+Number Of Lines:
+>t
+Number of lines in the list: 29
+>
+
+Insert:
+>i
+<line>
+>4
+Enter data to insert:
+Shaker Sort
+>f
+1: Popular Sorting Algorithms
+2:
+3: Insertion Sort
+4: Shaker Sort
+5: Selection Sort
+6: Bubble Sort
+7:
+8: Shell Sort
+9: Comb Sort
+10: Merge Sort
+11: Heap Sort
+12: Quick Sort
+13:
+14: Counting Sort
+15: Bucket Sort
+16: Radix Sort
+17:
+18: Odd-even Sort
+19: Flash Sort
+20: Burst Sort
+21: Postman Sort
+22: Stooge Sort
+23: Sample Sort
+24:
+25: While there is a large number of sorting algorithms,
+26: in practical implementations a few algorithms predominate.
+27:
+28: Insertion sort is widely used for small data sets,
+29: while for large data sets an efficient sorting algorithm
+30: is used, such as heap sort, merge sort, or quicksort.
+>
+
+Delete Line(s): (will also delete a single line)
+>d
+Line from:
+>2
+Line to:
+>12
+>f
+1: Popular Sorting Algorithms
+2: Quick Sort
+3:
+4: Counting Sort
+5: Bucket Sort
+6: Radix Sort
+7:
+8: Odd-even Sort
+9: Flash Sort
+10: Burst Sort
+11: Postman Sort
+12: Stooge Sort
+13: Sample Sort
+14:
+15: While there is a large number of sorting algorithms,
+16: in practical implementations a few algorithms predominate.
+17:
+18: Insertion sort is widely used for small data sets,
+19: while for large data sets an efficient sorting algorithm
+20: is used, such as heap sort, merge sort, or quicksort.
+
+Save To File: (after above delete)
+Popular Sorting Algorithms
+Quick Sort
+
+Counting Sort
+Bucket Sort
+Radix Sort
+
+Odd-even Sort
+Flash Sort
+Burst Sort
+Postman Sort
+Stooge Sort
+Sample Sort
+
+While there is a large number of sorting algorithms, 
+in practical implementations a few algorithms predominate. 
+
+Insertion sort is widely used for small data sets, 
+while for large data sets an efficient sorting algorithm 
+is used, such as heap sort, merge sort, or quicksort.
+
+Quit:
+Quits the program.
+
